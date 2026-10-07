@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heron's Field</title>
+
+    <!-- we will be adding some Katex stuff here, its a library for rendering math shi-->
+     <link rel="stylesheet" href="css/style.css">
+     <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header class="topbar">
+        <h1>Heron's Field</h1>
+        <!-- Thinking scoreboard will go here as well as turn -->
+         <div class="scoreboard">
+            <span id="score0">0</span>
+            <span id="turnLabel1">Blue's turn</span>
+            <span id="score1">0</span>
+         </div>
+    </header>
+
+    <main class="layout">
+        <section class="board">
+            <!-- game field will go here. render.js will draw grid, and dots yadda yadda-->
+             <svg id="field"></svg>
+             <p id="status"></p>
+             <button id="claimBtn" disabled>Claim area</button>
+        </section>
+
+        <!-- Heron's formula animation will go here. I will be using mathPanel.js for that-->
+         <aside id="mathPanel">
+            <h2>Working it out</h2>
+            <div class="steps"></div>
+         </aside>
+    </main>
+    
+</body>
+</html>
